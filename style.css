@@ -107,6 +107,11 @@
   --transition: .25s cubic-bezier(.4,0,.2,1);
 }
 
+@font-face {
+    font-family: "MyFont";
+    src: url("fonts/Khmer OS Battambang-Kh Auto.ttf") format("truetype");
+}
+
 /* ─── Reset ─── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -134,7 +139,11 @@ ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
 /* ─── Utilities ─── */
-.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+.container { max-width: 1100px;
+   margin: 0 auto; 
+   padding: 0 2rem; 
+   font-family: 'MyFont', sans-serif;
+  }
 .blue { color: var(--blue); }
 
 /* ─── Reveal Animations ─── */
@@ -542,7 +551,8 @@ img { max-width: 100%; display: block; }
    SECTION COMMONS
 ═══════════════════════════════════════ */
 .section { padding: 5rem 0; }
-.section-white { background: #fff; 
+.section-white { 
+  background: #fff; 
  /* White Background */
     background-color:#ffffff;
 
@@ -556,7 +566,9 @@ img { max-width: 100%; display: block; }
     /* Background Fixed */
     background-attachment:fixed;}
 .section-gray  { background: var(--light); }
+
 .s-label {
+  font-family: 'Kh Battambang', sans-serif;
   font-size: .68rem;
   font-weight: 700;
   letter-spacing: .14em;
@@ -576,7 +588,7 @@ img { max-width: 100%; display: block; }
   border-radius: 1px;
 }
 .sh {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'MyFont', sans-serif;
   font-size: clamp(1.6rem, 3vw, 2rem);
   font-weight: 800;
   letter-spacing: -.03em;
