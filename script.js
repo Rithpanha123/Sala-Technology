@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const animateCounter = (el) => {
     const target   = parseInt(el.dataset.target, 10);
-    const duration = 1600;
+    const duration = 7000;
     const start    = performance.now();
 
     const step = (now) => {
